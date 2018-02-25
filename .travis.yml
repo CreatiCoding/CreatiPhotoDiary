@@ -20,4 +20,4 @@ before_script:
 
 script:
    # - mvn -B -Dbrowser=webkit clean package
- - cd ./01_helloWorld && mvn -B test
+ - cd ./01_helloWorld && mvn -B -Djava.awt.headless=false test
