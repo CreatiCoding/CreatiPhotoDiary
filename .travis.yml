@@ -1,0 +1,19 @@
+language: java
+
+jdk: oraclejdk8
+
+env: DISPLAY=:99.0
+
+install: true
+
+before_install:
+ - sudo apt-get update
+ - sudo apt-get install gnome-themes-standard
+
+before_script:
+ - sh -e /etc/init.d/xvfb start
+ - sleep 10 # give xvfb some time to start
+
+script:
+   # - mvn -B -Dbrowser=webkit clean package
+ - cd ./01_helloWorld && mvn -B -Djava.awt.headless=false test && cd ..
