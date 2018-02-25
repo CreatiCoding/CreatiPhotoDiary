@@ -8,12 +8,15 @@ before_install:
  - sudo apt-get update
  - sudo apt-get install gnome-themes-standard
  - sudo apt-get install metacity
+ - sudo apt-get install libwebkit-dev
 
 before_script:
  - cd ./01_helloWorld/ 
  - sh -e /etc/init.d/xvfb start
  - sleep 10 # give xvfb some time to start
- 
+ - metacity --sm-disable --replace &
+ - sleep 10 # give metacity some time to start
+
 script:
    # - mvn -B -Dbrowser=webkit clean package
- - mvn -B -Djava.awt.headless=false test
+ - mvn -B test
