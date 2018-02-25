@@ -4,20 +4,21 @@ import java.awt.*;
 import javax.swing.JFrame;
 import org.springframework.boot.*;
 import org.springframework.boot.builder.*;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableAutoConfiguration 
 public class Application {
 
+
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(Application.class).headless(false).web(WebApplicationType.NONE).run(args);
+		ConfigurableApplicationContext context = new SpringApplicationBuilder(Application.class).headless(false).web(WebApplicationType.NONE).run(args);
+		HelloWorld helloWorld = context.getBean(HelloWorld.class);
 	}
 
-	@Bean
-	public HelloWorld frame() {
-		return new HelloWorld();
-	}
 }
 
 class HelloWorld extends JFrame {
