@@ -2,6 +2,8 @@ language: java
 
 jdk: oraclejdk8
 
+env: DISPLAY=:99.0
+
 install: true
 
 before_install:
@@ -11,7 +13,6 @@ before_install:
  - sudo apt-get install libwebkit-dev
 
 before_script:
- - cd ./01_helloWorld/ 
  - sh -e /etc/init.d/xvfb start
  - sleep 10 # give xvfb some time to start
  - metacity --sm-disable --replace &
@@ -19,4 +20,4 @@ before_script:
 
 script:
    # - mvn -B -Dbrowser=webkit clean package
- - mvn -B test
+ - cd ./01_helloWorld && mvn -B test
