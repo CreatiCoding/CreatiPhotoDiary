@@ -2,9 +2,11 @@ language: java
 
 jdk: oraclejdk8
 
+install: true
+
 before_script:
-    - pwd
-    - ls
     - cd ./01_helloWorld/ 
+
 script:
-    - ./mvnw spring-boot:run
+    - mvn spring-boot:run
+   #- ./mvnw spring-boot:run
