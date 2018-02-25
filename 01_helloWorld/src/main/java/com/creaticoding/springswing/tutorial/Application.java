@@ -1,7 +1,9 @@
 package com.creaticoding.springswing.tutorial;
 
 import java.awt.*;
-import javax.swing.JFrame;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.boot.builder.*;
@@ -11,13 +13,13 @@ import org.springframework.stereotype.Component;
 public class Application {
 
 	public static void main(String[] args) {
-        SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
-        builder.headless(false).web(WebApplicationType.NONE).run(args);
+		SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
+		builder.headless(false).web(WebApplicationType.NONE).run(args);
 	}
 }
 
 @Component
-class HelloWorld extends JFrame {
+class HelloWorld extends Frame {
 	private static final long serialVersionUID = -651405855813691971L;
 
 	HelloWorld() {
@@ -27,6 +29,10 @@ class HelloWorld extends JFrame {
 		this.setSize(500, 200);
 		this.add(label1);
 		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we) {
+				System.exit(0);
+			}
+		});
 	}
 }
