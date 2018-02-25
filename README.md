@@ -9,7 +9,7 @@
 
 #### 01. Hello World [![Build Status](https://travis-ci.org/CreatiCoding/CreatiPhotoDiary.svg?branch=master)](https://travis-ci.org/CreatiCoding/CreatiPhotoDiary)
 
-​	스프링 부트를 활용해 Jframe을 실행하는 프로젝트입니다.
+​	스프링 부트를 활용해 AWT의 Frame을 실행하여 Hello World를 출력하는 프로젝트입니다.
 
 ​	**[01_helloWorld](https://github.com/CreatiCoding/CreatiPhotoDiary/wiki/01_helloWorld)**
 
