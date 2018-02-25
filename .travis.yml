@@ -5,6 +5,6 @@ jdk: oraclejdk8
 before_script:
     - pwd
     - ls
-    - cd ./01_HelloWorld/ 
+    - cd ./01_helloWorld/ 
 script:
     - ./mvnw spring-boot:run
