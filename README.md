@@ -11,5 +11,5 @@
 
 ​	스프링 부트를 활용해 Jframe을 실행하는 프로젝트입니다.
 
-​	**[01_HelloWorld](https://github.com/CreatiCoding/CreatiPhotoDiary/wiki/01_HelloWorld)**
+​	**[01_helloWorld](https://github.com/CreatiCoding/CreatiPhotoDiary/wiki/01_helloWorld)**
 
