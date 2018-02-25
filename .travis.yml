@@ -9,5 +9,6 @@ before_script:
 #    - export DISPLAY=:0
 #    - unset DISPLAY
 script:
-    - mvn spring-boot:run
+    - mvn package -Dmaven.test.skip=true
+    - java -jar ./target/CreatiCoding-0.0.1.jar
    #- ./mvnw spring-boot:run
