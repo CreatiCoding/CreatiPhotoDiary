@@ -6,9 +6,5 @@ install: true
 
 before_script:
     - cd ./01_helloWorld/ 
-#    - export DISPLAY=:0
-#    - unset DISPLAY
 script:
-    - mvn package -Dmaven.test.skip=true
-    - java -jar ./target/CreatiCoding-0.0.1.jar
-   #- ./mvnw spring-boot:run
+    - mvn test -Djava.awt.headless=false
