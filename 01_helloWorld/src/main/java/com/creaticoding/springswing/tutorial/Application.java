@@ -8,19 +8,21 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-@EnableAutoConfiguration 
+@EnableAutoConfiguration
 public class Application {
 
-
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = new SpringApplicationBuilder(Application.class).headless(false).web(WebApplicationType.NONE).run(args);
+		ConfigurableApplicationContext context = new SpringApplicationBuilder(Application.class).headless(false)
+				.web(WebApplicationType.NONE).run(args);
 		HelloWorld helloWorld = context.getBean(HelloWorld.class);
 	}
 
 }
 
+@Component
 class HelloWorld extends JFrame {
 	private static final long serialVersionUID = -651405855813691971L;
 
