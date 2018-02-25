@@ -6,7 +6,8 @@ install: true
 
 before_script:
     - cd ./01_helloWorld/ 
-    - unset DISPLAY
+    - export DISPLAY=:0
+#    - unset DISPLAY
 script:
     - mvn spring-boot:run
    #- ./mvnw spring-boot:run
