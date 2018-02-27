@@ -1,5 +1,6 @@
 # CreatiPhotoDiary
 ​	Photo Diary By Spring Boot
+
 ​	Travis Test : [![Build Status](https://travis-ci.org/CreatiCoding/CreatiPhotoDiary.svg?branch=master)](https://travis-ci.org/CreatiCoding/CreatiPhotoDiary)
 
 ### 개요
@@ -17,6 +18,8 @@
 
 
 #### 02. Counter
+
+[![02_Counter_실행화면](https://raw.githubusercontent.com/CreatiCoding/CreatiPhotoDiary/master/02_Counter/images/main.png)](https://github.com/CreatiCoding/CreatiPhotoDiary/tree/master/02_Counter)
 
 ​	AWT의 Frame, Panel, Button, Label을 사용하여 버튼을 누르면 횟수가 카운트 되어 출력되는 프로젝트입니다.
 
