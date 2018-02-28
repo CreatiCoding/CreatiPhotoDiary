@@ -39,7 +39,7 @@
 
 #### 03. PostBoard
 
-[![02_Counter_실행화면](https://raw.githubusercontent.com/CreatiCoding/CreatiPhotoDiary/master/03_PostBoard/images/main.png)](https://github.com/CreatiCoding/CreatiPhotoDiary/tree/master/03_PostBoard)
+[![02_Counter_실행화면](https://raw.githubusercontent.com/CreatiCoding/CreatiPhotoDiary/master/03_PostBoard/images/main.PNG)](https://github.com/CreatiCoding/CreatiPhotoDiary/tree/master/03_PostBoard)
 
 ​	파일 입출력을 이용하여 간단하게 게시물을 작성하는 프로그램입니다.
 
