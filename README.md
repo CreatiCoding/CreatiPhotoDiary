@@ -17,6 +17,8 @@
 
 #### 01. Hello World
 
+[![02_Counter_실행화면](https://raw.githubusercontent.com/CreatiCoding/CreatiPhotoDiary/master/01_helloWorld/images/main.png)](https://github.com/CreatiCoding/CreatiPhotoDiary/tree/master/01_helloWorld)
+
 ​	스프링 부트를 활용해 AWT의 Frame을 실행하여 Hello World를 출력하는 프로젝트입니다.
 
 ​	**[01_helloWorld](https://github.com/CreatiCoding/CreatiPhotoDiary/wiki/01_helloWorld)**
