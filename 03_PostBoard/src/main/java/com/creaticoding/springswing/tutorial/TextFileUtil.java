@@ -1,6 +1,5 @@
 package com.creaticoding.springswing.tutorial;
 
-import static org.junit.Assert.assertEquals;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
@@ -58,7 +57,7 @@ public class TextFileUtil {
     	this.writeTextFile(fileName, this.readTextFile(fileName)+contents);
     }
     
-	//@Test
+/*	//@Test
 	public void testReadTextFile() {
 		String result = this.readTextFile("file.txt");
         assertEquals(result, "test");
@@ -81,5 +80,5 @@ public class TextFileUtil {
         assertEquals(result, "testhello\r\nworld!!");
         this.writeTextFile("file.txt", origin);
 	}
-	
+	*/
 }
