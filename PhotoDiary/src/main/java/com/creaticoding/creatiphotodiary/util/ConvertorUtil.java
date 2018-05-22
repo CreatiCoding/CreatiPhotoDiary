@@ -31,6 +31,8 @@ public class ConvertorUtil {
 	public byte[] BufferedImage2ByteArray(BufferedImage originalImage) {
 		byte[] imageInByte;
 		ByteArrayOutputStream baos;
+		if (originalImage == null)
+			return null;
 		try {
 			baos = new ByteArrayOutputStream();
 			ImageIO.write(originalImage, "jpg", baos);
@@ -52,6 +54,8 @@ public class ConvertorUtil {
 	public BufferedImage byteArr2bufferedImage(byte[] imageInByte) {
 		InputStream in;
 		BufferedImage bImageFromConvert;
+		if (imageInByte == null)
+			return null;
 		try {
 			in = new ByteArrayInputStream(imageInByte);
 			bImageFromConvert = ImageIO.read(in);

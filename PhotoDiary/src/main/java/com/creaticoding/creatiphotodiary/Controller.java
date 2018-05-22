@@ -61,11 +61,13 @@ public class Controller {
 				return;
 			} else {
 				BufferedImage buff = null;
-				try {
-					// 파일이 없다면 에러가 발생하고 버퍼를 널로 초기화시켜준다.
-					buff = ImageIO.read(uploadedFile);
-				} catch (IOException e1) {
-					buff = null;
+				if(uploadedFile != null) {
+					try {
+						// 파일이 없다면 에러가 발생하고 버퍼를 널로 초기화시켜준다.
+						buff = ImageIO.read(uploadedFile);
+					} catch (IOException e1) {
+						buff = null;
+					}
 				}
 				// 모델을 완성한다.
 				DiaryModel model = new DiaryModel(modelList.size(), view.getInputArea().getText(),
